@@ -54,10 +54,10 @@ class Component {
   }
 }
 
-var component = new Component(100, 100, 100, 100, "#FF0000");
+var component = new Component(100, 100, 100, 100, "#FFFFFF");
 
 setInterval(() => {
-  context.fillStyle = "#000000";
+  context.fillStyle = "#aab0aF";
   context.fillRect(0, 0, canvas.width, canvas.height);
 
   component.draw(context);
@@ -70,7 +70,7 @@ document.addEventListener("keydown", (event) => {
   } else if (event.key === "ArrowLeft") {
     component.x_vel -= 5;
   } else if (event.key === "ArrowUp") {
-    component.y_vel -= 5;
+    component.y_vel -= 30;
   } else if (event.key === "ArrowDown") {
     component.y_vel += 5;
   }
