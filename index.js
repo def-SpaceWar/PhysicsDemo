@@ -54,10 +54,10 @@ class Component {
   }
 }
 
-var component = new Component(100, 100, 100, 100, "#FFFFFF");
+var component = new Component(100, 100, 100, 100, "#FF0000");
 
 setInterval(() => {
-  context.fillStyle = "#aab0aF";
+  context.fillStyle = "#22eeff";
   context.fillRect(0, 0, canvas.width, canvas.height);
 
   component.draw(context);
